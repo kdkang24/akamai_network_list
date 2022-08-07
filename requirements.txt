@@ -1,0 +1,6 @@
+requests
+pyopenssl
+ndg-httpsclient
+pyasn1
+urllib3
+hvac

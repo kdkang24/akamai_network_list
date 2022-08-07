@@ -6,14 +6,6 @@ import pprint
 import datetime
 
 
-"""
-TO DO:
-- Add logging
-- Slack notifications if response codes are not 200 (Add exception handling)
-- Dockerize
-- Set up as cron job on infosec server
-"""
-
 baseurl = '<YOUR_AKAMAI_API_HOST>'
 s = requests.Session()
 s.auth = EdgeGridAuth(
@@ -24,7 +16,7 @@ s.auth = EdgeGridAuth(
 date = datetime.datetime.now()
 month = date.strftime("%B")
 year = date.strftime("%Y")
-notification_email = '<YOUR_EMAIL_ADDRESS_HERE'
+notification_email = '<YOUR_EMAIL_ADDRESS_HERE>'
 
 def get_list_info(search_term):
     #In order to update a list, you first need to get its unique ID and sync point

@@ -6,10 +6,10 @@ import re
 
 #fixed base url
 base_url = "https://members.tagtoday.net"
-username = '<YOUR_TAG_USERNAME'
-password = '<YOUR_TAG_PASSWORD'
+username = '<YOUR_TAG_USERNAME>'
+password = '<YOUR_TAG_PASSWORD>'
 app_ID = '<YOUR_TAG_APP_ID>'
-app_pass = '<YOUR_TAG_APP_PASSWORD'
+app_pass = '<YOUR_TAG_APP_PASSWORD>'
 
 def create_session():
     #documentation says /api/api.svc, but it's actually /.api/api.svc
